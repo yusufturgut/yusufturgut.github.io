@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Yusuf Turgut — Senior Cyber Security Incident Responder</title>
+  <meta name="description" content="Yusuf Turgut — Senior Cyber Security Incident Responder at Turkcell, Istanbul. Incident response, DFIR, detection engineering, threat hunting and threat intelligence." />
+  <meta property="og:title" content="Yusuf Turgut — Senior Cyber Security Incident Responder" />
+  <meta property="og:description" content="Incident response, DFIR, detection engineering, threat hunting and threat intelligence at Turkcell." />
+  <meta property="og:image" content="https://yusufturgut.github.io/assets/photo.jpg" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#05080d" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='16' fill='%2305080d'/><path d='M32 13l15 6v11c0 9.5-6.4 16.5-15 18.5C23.4 46.5 17 39.5 17 30V19z' fill='none' stroke='%2300ff9c' stroke-width='3.5' stroke-linejoin='round'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <canvas id="net" aria-hidden="true"></canvas>
+  <div class="grid-bg" aria-hidden="true"></div>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="aura" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <header class="nav" id="top">
+    <div class="wrap nav-inner">
+      <a href="#top" class="brand"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><span>yusuf<span class="hl">@</span>turgut</span></a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#writing">Writing</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero wrap">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow reveal"><span class="dot"></span>Senior Cyber Security Incident Responder · Turkcell</p>
+          <h1 class="reveal">
+            Yusuf Turgut<br />
+            <span class="tagline">&gt; calm under incident<i class="cursor"></i></span>
+          </h1>
+          <p class="lead reveal">
+            I lead L2 incident response and detection engineering for Turkcell and the customers of its
+            managed SOC — turning alerts into answers, and answers into containment.
+          </p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#contact">Get in touch</a>
+            <a class="btn btn-soft" href="https://www.linkedin.com/in/yusuf-turgut/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="case reveal" aria-hidden="true">
+          <i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+          <div class="case-bar">
+            <span class="case-dots"><i></i><i></i><i></i></span>
+            <span class="case-title">case IR-2026-0412</span>
+            <span class="case-status" id="caseStatus">investigating</span>
+          </div>
+          <pre class="case-body" id="term"></pre>
+          <div class="case-foot">
+            <span>severity <b class="sev">critical</b></span>
+            <span>hosts <b>3</b></span>
+            <span>tier <b>L2</b></span>
+          </div>
+        </div>
+      </div>
+
+      <dl class="stats reveal">
+        <div><dt><span class="count" data-to="5">5</span>+</dt><dd>years on the blue team</dd></div>
+        <div><dt>L2</dt><dd>incident response escalation point</dd></div>
+        <div><dt><span class="count" data-to="4">4</span></dt><dd>organisations, enterprise &amp; managed SOC</dd></div>
+        <div><dt><span class="count" data-to="3">3</span><sup>rd</sup></dt><dd>in department · GPA 3.62</dd></div>
+      </dl>
+
+      <div class="lifecycle reveal">
+        <p class="lifecycle-label">// incident response lifecycle</p>
+        <ol id="ir">
+          <li><span>01</span>Preparation</li>
+          <li><span>02</span>Detection &amp; Analysis</li>
+          <li><span>03</span>Containment</li>
+          <li><span>04</span>Eradication</li>
+          <li><span>05</span>Recovery</li>
+          <li><span>06</span>Lessons Learned</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section wrap" id="about">
+      <div class="about">
+        <div class="about-text reveal">
+          <p class="kicker"><span class="p">$</span> cat about.md</p>
+          <h2>Defending at scale, <span class="serif">one incident at a time.</span></h2>
+          <p>
+            I'm a Senior Cyber Security Incident Responder in Turkcell's Cyber Defense Center. As the
+            L2 escalation point for SOC analysts, I own incidents end to end — triage, DFIR on
+            Windows and Linux endpoints, sandbox analysis of malware and phishing, containment and
+            recovery.
+          </p>
+          <p>
+            Over five years I've grown from L1 monitoring at UITSEC and CyberForce SOC, through ING
+            Türkiye's Cyber Defense Center, into detection engineering, threat hunting and threat
+            intelligence at Turkcell. A software engineering background means I automate wherever I
+            can — today increasingly with AI-assisted workflows, while expanding into cloud and
+            container security.
+          </p>
+        </div>
+        <aside class="profile reveal">
+          <img src="assets/photo.jpg" alt="Yusuf Turgut" width="72" height="72" loading="lazy" />
+          <div class="profile-name">
+            <b>Yusuf Turgut</b>
+            <span>Istanbul, Türkiye</span>
+          </div>
+          <ul class="facts">
+            <li><span>Currently</span>Turkcell · Cyber Defense Center</li>
+            <li><span>Focus</span>Incident Response · DFIR</li>
+            <li><span>Education</span>B.Sc. Software Engineering</li>
+            <li><span>Languages</span>Turkish · English · German (beginner)</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <!-- EXPERTISE -->
+    <section class="section wrap" id="expertise">
+      <div class="section-head reveal">
+        <p class="kicker"><span class="p">$</span> ls -la ./expertise</p>
+        <h2>What I bring <span class="serif">to the response.</span></h2>
+      </div>
+      <div class="cards">
+        <article class="card card-lead reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
+          <h3>Incident Response &amp; DFIR</h3>
+          <p>Full-lifecycle response as the L2 escalation point — triage, scoping, endpoint forensics via CrowdStrike Falcon XDR, sandbox analysis of malware and phishing, containment, eradication and recovery.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></div>
+          <h3>Detection Engineering</h3>
+          <p>Splunk rule design and tuning, SOAR playbooks, log-source onboarding and use cases — fewer false positives, sharper signal.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg></div>
+          <h3>Threat Hunting &amp; Intelligence</h3>
+          <p>Intelligence-led hunts; turning IoCs, adversary TTPs and campaign reports into hunts, detections and blocks.</p>
+        </article>
+        <article class="card reveal">
+          <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg></div>
+          <h3>Automation, AI &amp; Cloud</h3>
+          <p>Python automations, AI-assisted security workflows, AI tooling for API security, and growing GCP, AWS and container security work.</p>
+        </article>
+      </div>
+
+      <div class="tools reveal">
+        <div><span>SIEM &amp; SOAR</span><ul><li>Splunk</li><li>QRadar</li><li>ArcSight</li><li>Logsign</li><li>CryptoSIM</li><li>Graylog</li><li>SOAR</li></ul></div>
+        <div><span>EDR / XDR</span><ul><li>CrowdStrike Falcon</li><li>Trend Micro</li><li>McAfee ePO</li><li>ITDR</li><li>DLP</li></ul></div>
+        <div><span>Network</span><ul><li>WAF</li><li>IPS</li><li>Suricata</li><li>Snort</li><li>Security Onion</li><li>A10</li><li>Wireshark</li></ul></div>
+        <div><span>Threat Intel</span><ul><li>MITRE ATT&amp;CK</li><li>BOZOK TI</li><li>SOCRadar</li><li>Mandiant</li><li>FireEye</li></ul></div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section wrap" id="experience">
+      <div class="section-head reveal">
+        <p class="kicker"><span class="p">$</span> git log --oneline career</p>
+        <h2>Five years, <span class="serif">one direction.</span></h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="job is-current reveal">
+          <div class="job-when">03/2025 — Present</div>
+          <div class="job-body">
+            <h3>Senior Cyber Security Incident Responder</h3>
+            <p class="job-org">Turkcell · Istanbul <span class="badge">Current</span></p>
+            <ul>
+              <li>Lead end-to-end incident response as L2 escalation point for SOC analysts.</li>
+              <li>DFIR on compromised Windows/Linux endpoints via CrowdStrike Falcon XDR; sandbox analysis of malware and phishing.</li>
+              <li>Write and tune Splunk detections and SOAR playbooks; design log integrations for managed-SOC customers.</li>
+              <li>Cyber Defense Center point of contact for Turkcell's critical web services; WAF/IPS tuning.</li>
+              <li>Intelligence-led threat hunting; build AI-assisted automations; mentor junior analysts.</li>
+            </ul>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job-when">07/2024 — 03/2025</div>
+          <div class="job-body">
+            <h3>Senior Cyber Security Analyst</h3>
+            <p class="job-org">Turkcell · Istanbul</p>
+            <p>Bridged DFIR, planning and analyst teams; designed and tuned SIEM detections, contributed to SOAR playbooks and built Python automations.</p>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job-when">01/2023 — 07/2024</div>
+          <div class="job-body">
+            <h3>Cyber Security Analyst</h3>
+            <p class="job-org">Turkcell · Istanbul</p>
+            <p>Monitoring across EDR, firewall, IPS, DLP and WAF; threat-intelligence reporting, IoC management and Python automations for the BOZOK TI Platform.</p>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job-when">07/2022 — 01/2023</div>
+          <div class="job-body">
+            <h3>Cyber Security Analyst</h3>
+            <p class="job-org">ING Türkiye · via Mirsis</p>
+            <p>Blue-team analyst in the bank's Cyber Defense Center — phishing analysis, mail/IP blocking, DDoS tracking and intelligence analysis.</p>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job-when">10/2021 — 07/2022</div>
+          <div class="job-body">
+            <h3>Cyber Security Analyst – L1</h3>
+            <p class="job-org">CyberForce SOC · a UITSEC company</p>
+            <p>L1 monitoring and analysis across ArcSight, QRadar, Logsign and CryptoSIM; supported SIEM rule and correlation writing.</p>
+          </div>
+        </li>
+        <li class="job reveal">
+          <div class="job-when">07/2021 — 10/2021</div>
+          <div class="job-body">
+            <h3>Cyber Security Intern</h3>
+            <p class="job-org">UITSEC Security Technologies Group</p>
+            <p>SOC and blue-team support, cyber-intelligence research, IDS/IPS and packet analysis.</p>
+          </div>
+        </li>
+      </ol>
+
+      <div class="edu reveal">
+        <div>
+          <p class="kicker"><span class="p">$</span> cat education.txt</p>
+          <h3>B.Sc. Software Engineering</h3>
+          <p class="job-org">Kırklareli University · 2018 — 2022</p>
+        </div>
+        <p class="edu-note">Ranked <b>3rd</b> in the department · GPA <b>3.62</b> / 4.00</p>
+      </div>
+    </section>
+
+    <!-- WRITING -->
+    <section class="section wrap" id="writing">
+      <div class="section-head reveal">
+        <p class="kicker"><span class="p">$</span> tail -f ./writing.log</p>
+        <h2>Notes on threat intelligence, <span class="serif">in Turkish.</span></h2>
+      </div>
+      <ul class="posts reveal">
+        <li><a href="https://medium.com/@yusufturgut/mitre-sald%C4%B1r%C4%B1-%C3%A7er%C3%A7evesi-mitre-att-ck-framework-nedir-6d40db9cc69e" target="_blank" rel="noopener"><span>MITRE ATT&amp;CK Framework Nedir?</span><em>↗</em></a></li>
+        <li><a href="https://medium.com/@yusufturgut/opencti-nedir-fef368ef5c51" target="_blank" rel="noopener"><span>OpenCTI Nedir?</span><em>↗</em></a></li>
+        <li><a href="https://medium.com/@yusufturgut/misp-malware-information-sharing-platform-nedir-9e9b4556570a" target="_blank" rel="noopener"><span>MISP Nedir?</span><em>↗</em></a></li>
+        <li><a href="https://medium.com/@yusufturgut/yara-nedir-15630a23bc26" target="_blank" rel="noopener"><span>YARA Nedir?</span><em>↗</em></a></li>
+        <li><a href="https://medium.com/@yusufturgut/stix-ve-taxii-nedir-56428d4e6a66" target="_blank" rel="noopener"><span>STIX ve TAXII Nedir?</span><em>↗</em></a></li>
+        <li><a href="https://medium.com/@yusufturgut/ioc-nedir-e449d9e527c" target="_blank" rel="noopener"><span>IOC Nedir?</span><em>↗</em></a></li>
+      </ul>
+      <a class="more reveal" href="https://medium.com/@yusufturgut" target="_blank" rel="noopener">All articles on Medium →</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section wrap" id="contact">
+      <div class="contact reveal">
+        <i class="c tl"></i><i class="c tr"></i><i class="c bl"></i><i class="c br"></i>
+        <p class="kicker"><span class="p">$</span> ./open_secure_channel.sh</p>
+        <h2>Let's talk <span class="serif">security.</span></h2>
+        <p class="lead">Open to conversations about incident response, detection engineering and new opportunities.</p>
+        <a class="mail" href="mailto:yusufturrgut@gmail.com">yusufturrgut@gmail.com</a>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/in/yusuf-turgut/" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://github.com/yusufturgut" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://medium.com/@yusufturgut" target="_blank" rel="noopener">Medium</a></li>
+          <li><a href="https://twitter.com/yusufturrgut" target="_blank" rel="noopener">X</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>© <span id="year"></span> Yusuf Turgut</span>
+    <span>Istanbul</span>
+  </footer>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
